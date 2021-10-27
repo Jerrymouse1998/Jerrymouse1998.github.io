@@ -196,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/15/(%E8%BD%AC)%E5%88%86%E5%B8%83%E5%BC%8F%E4%B9%8BRedis/">
+    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/15/(%E8%BD%AC)%E8%A1%A5%E7%A0%81(%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8A%A0%E4%B8%80)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s1.ax1x.com/2020/05/24/tSPuFJ.png">
@@ -210,7 +210,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/15/(%E8%BD%AC)%E5%88%86%E5%B8%83%E5%BC%8F%E4%B9%8BRedis/" class="post-title-link" itemprop="url">为什么使用Redis</a>
+            <a href="/2020/03/15/(%E8%BD%AC)%E8%A1%A5%E7%A0%81(%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8A%A0%E4%B8%80)/" class="post-title-link" itemprop="url">补码(为什么按位取反再加一)</a>
         </h1>
 
         <div class="post-meta">
@@ -227,7 +227,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-16 20:18:07" itemprop="dateModified" datetime="2020-04-16T20:18:07+08:00">2020-04-16</time>
+                <time title="修改时间：2020-04-16 20:17:47" itemprop="dateModified" datetime="2020-04-16T20:17:47+08:00">2020-04-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Redis/" itemprop="url" rel="index"><span itemprop="name">Redis</span></a>
+                  <a href="/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Java学习笔记</span></a>
                 </span>
             </span>
 
@@ -248,8 +248,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/03/15/(%E8%BD%AC)%E5%88%86%E5%B8%83%E5%BC%8F%E4%B9%8BRedis/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/15/(%E8%BD%AC)%E5%88%86%E5%B8%83%E5%BC%8F%E4%B9%8BRedis/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/03/15/(%E8%BD%AC)%E8%A1%A5%E7%A0%81(%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8A%A0%E4%B8%80)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/15/(%E8%BD%AC)%E8%A1%A5%E7%A0%81(%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8A%A0%E4%B8%80)/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -259,7 +259,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>5.2k</span>
+              <span>3.9k</span>
             </span>
 
         </div>
@@ -271,12 +271,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>作者：孤独烟 </p>
-<p>出处：<a href="http://rjzheng.cnblogs.com/" target="_blank" rel="noopener"> http://rjzheng.cnblogs.com/</a></p>
-<p>本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。
+          <p>首先，阅读这篇文章的你，肯定是一个在网上已经纠结了很久的读者，因为你查阅了所有你能查到的资料，然后他们都会很耐心的告诉你，补码：就是按位取反，然后加一。准确无误，毫无破绽。但是，你搜遍了所有俯拾即是而且准确无误的答案，却仍然选择来看这篇毫不起眼的文章，原因只有一个，只因为你还没有得到你想要的东西。
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/15/(%E8%BD%AC)%E5%88%86%E5%B8%83%E5%BC%8F%E4%B9%8BRedis/#more" rel="contents">
+              <a class="btn" href="/2020/03/15/(%E8%BD%AC)%E8%A1%A5%E7%A0%81(%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%E5%86%8D%E5%8A%A0%E4%B8%80)/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -709,7 +707,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/15/Java%E5%A4%9A%E7%BB%A7%E6%89%BF%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s1.ax1x.com/2020/05/24/tSPuFJ.png">
@@ -723,7 +721,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/15/Java%E5%A4%9A%E7%BB%A7%E6%89%BF%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">Java多继承问题</a>
+            <a href="/2020/03/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" class="post-title-link" itemprop="url">Java多线程</a>
         </h1>
 
         <div class="post-meta">
@@ -740,7 +738,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-16 16:05:55" itemprop="dateModified" datetime="2020-03-16T16:05:55+08:00">2020-03-16</time>
+                <time title="修改时间：2020-03-18 00:15:49" itemprop="dateModified" datetime="2020-03-18T00:15:49+08:00">2020-03-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -761,8 +759,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/03/15/Java%E5%A4%9A%E7%BB%A7%E6%89%BF%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/15/Java%E5%A4%9A%E7%BB%A7%E6%89%BF%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/03/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -772,7 +770,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>11k</span>
             </span>
 
         </div>
@@ -784,10 +782,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>长期被诟病的多继承，不仅仅是Java语言所头疼的问题。多继承是一个较为复杂的设计问题，使用中很容易出现致命的问题。像Goto语句一样，利弊交织。
+          <h2 id="进程和线程的概念："><a href="#进程和线程的概念：" class="headerlink" title="进程和线程的概念："></a>进程和线程的概念：
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/03/15/Java%E5%A4%9A%E7%BB%A7%E6%89%BF%E9%97%AE%E9%A2%98/#more" rel="contents">
+              <a class="btn" href="/2020/03/15/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
