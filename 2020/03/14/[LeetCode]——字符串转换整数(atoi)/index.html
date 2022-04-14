@@ -27,23 +27,24 @@
     var CONFIG = {"hostname":"www.m1ng.top","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="NO.56 合并区间 中等">
+  <meta name="description" content="NO.8 字符串转换整数 (atoi) 中等">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode——合并区间">
-<meta property="og:url" content="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/index.html">
+<meta property="og:title" content="LeetCode——字符串转换整数(atoi)">
+<meta property="og:url" content="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0(atoi)/index.html">
 <meta property="og:site_name" content="M1ng">
-<meta property="og:description" content="NO.56 合并区间 中等">
+<meta property="og:description" content="NO.8 字符串转换整数 (atoi) 中等">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/03/04/3IoSbR.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/13/QgMsVP.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/12/13/QgMDbt.png">
 <meta property="article:published_time" content="2020-03-14T09:11:26.000Z">
-<meta property="article:modified_time" content="2020-03-16T06:51:43.931Z">
+<meta property="article:modified_time" content="2022-04-14T08:53:52.202Z">
 <meta property="article:author" content="M1ng">
 <meta property="article:tag" content="leetcode">
-<meta property="article:tag" content="数组">
+<meta property="article:tag" content="字符串">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/03/04/3IoSbR.png">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/12/13/QgMsVP.png">
 
-<link rel="canonical" href="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/">
+<link rel="canonical" href="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0(atoi)/">
 
 
 <script id="page-configurations">
@@ -55,7 +56,7 @@
   };
 </script>
 
-  <title>LeetCode——合并区间 | M1ng</title>
+  <title>LeetCode——字符串转换整数(atoi) | M1ng</title>
   
 
 
@@ -204,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/">
+    <link itemprop="mainEntityOfPage" href="http://www.m1ng.top/2020/03/14/[LeetCode]%E2%80%94%E2%80%94%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0(atoi)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://s1.ax1x.com/2020/05/24/tSPuFJ.png">
@@ -217,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LeetCode——合并区间
+          LeetCode——字符串转换整数(atoi)
         </h1>
 
         <div class="post-meta">
@@ -234,7 +235,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-16 14:51:43" itemprop="dateModified" datetime="2020-03-16T14:51:43+08:00">2020-03-16</time>
+                <time title="修改时间：2022-04-14 16:53:52" itemprop="dateModified" datetime="2022-04-14T16:53:52+08:00">2022-04-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -262,8 +263,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0(atoi)/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%95%B4%E6%95%B0(atoi)/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -273,7 +274,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>217</span>
+              <span>278</span>
             </span>
 
         </div>
@@ -285,14 +286,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="NO-56-合并区间-中等"><a href="#NO-56-合并区间-中等" class="headerlink" title="NO.56 合并区间 中等 "></a>NO.56 合并区间 <font color=orange>中等</font> <a id="more"></a></h2><p><img src="https://s2.ax1x.com/2020/03/04/3IoSbR.png" alt="3IoSbR.png"></p>
-<p><strong><font color=red>思路一：排序</font></strong> 将所有区间按照左边界大小进行非递减排序。</p>
-<p>什么样的区间是重叠的需要合并？</p>
-<p>[1,3]、[2,6] 第1个区间的右边界大于下一个区间的左边界即发生重叠。</p>
-<p>需要合并成[第一个区间的左边界,max(第一个区间的右边界,第二个区间的右边界)]这个区间加入结果集。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[][] merge(<span class="keyword">int</span>[][] intervals) &#123;</span><br><span class="line">    List&lt;<span class="keyword">int</span>[]&gt; res=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">if</span> (intervals==<span class="keyword">null</span>||intervals.length==<span class="number">0</span>)<span class="keyword">return</span> res.toArray(<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">0</span>][]);</span><br><span class="line">    <span class="comment">//每个区间按照区间左边界升序排序</span></span><br><span class="line">    Arrays.sort(intervals, (o1,o2)-&gt;o1[<span class="number">0</span>]-o2[<span class="number">0</span>]);</span><br><span class="line">    <span class="comment">//遍历每个区间</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> pre = <span class="number">0</span>; pre &lt; intervals.length; pre++) &#123;</span><br><span class="line">        <span class="comment">//记录当前区间的左右边界值</span></span><br><span class="line">        <span class="keyword">int</span> left=intervals[pre][<span class="number">0</span>],right=intervals[pre][<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//如果当前区间的右边界大于下一个区间的左边界，即发生重叠</span></span><br><span class="line">        <span class="keyword">while</span> (pre&lt;intervals.length-<span class="number">1</span>&amp;&amp;right&gt;=intervals[pre+<span class="number">1</span>][<span class="number">0</span>])&#123;</span><br><span class="line">            right=Math.max(right,intervals[pre+<span class="number">1</span>][<span class="number">1</span>]);</span><br><span class="line">            pre++;</span><br><span class="line">        &#125;</span><br><span class="line">        res.add(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;left,right&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res.toArray(<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">0</span>][]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="NO-8-字符串转换整数-atoi-中等"><a href="#NO-8-字符串转换整数-atoi-中等" class="headerlink" title="NO.8 字符串转换整数 (atoi) 中等 "></a>NO.8 字符串转换整数 (atoi) <font color=orange>中等</font> <a id="more"></a></h2><p><img src="https://s2.ax1x.com/2019/12/13/QgMsVP.png" alt="QgMsVP.png"></p>
+<p><img src="https://s2.ax1x.com/2019/12/13/QgMDbt.png" alt="QgMDbt.png"></p>
+<p><font color=red><strong>思路一：三步串行法</strong></font> 瞎起了一个名字，其实就是简单的三个步骤逐一进行即可：1.跳过所有空格。2.确定正负号。3.找出连续的数字并进行溢出判断。</p>
+<p>判断每个字符是否是数字时，.<strong>第一个</strong>字符可以是‘+’或‘-’，其余字符都必须是数字，循环才能继续。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">myAtoi</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        如果字符串为空直接返回0</span></span><br><span class="line">        <span class="keyword">if</span>(str==<span class="keyword">null</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="comment">//        1.去掉所有空格</span></span><br><span class="line">        String s = str.trim();</span><br><span class="line"><span class="comment">//        如果去掉空格之后字符串为空，就返回0</span></span><br><span class="line">        <span class="keyword">if</span> (s.equals(<span class="string">""</span>))<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="comment">//        2.判断正负号</span></span><br><span class="line">        <span class="keyword">int</span> flag=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (s.charAt(<span class="number">0</span>)==<span class="string">'-'</span>)flag=-<span class="number">1</span>;</span><br><span class="line"><span class="comment">//        3.找出连续的数字</span></span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c=s.charAt(i);</span><br><span class="line">            <span class="keyword">if</span> (c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>)&#123;<span class="comment">//数字</span></span><br><span class="line">    <span class="comment">//            溢出判断</span></span><br><span class="line">                <span class="keyword">if</span> (flag==<span class="number">1</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span> (ans&gt;Integer.MAX_VALUE/<span class="number">10</span>||(ans==Integer.MAX_VALUE/<span class="number">10</span>&amp;&amp;c-<span class="string">'0'</span>&gt;<span class="number">7</span>))</span><br><span class="line">                        <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line">                &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (ans*flag&lt;Integer.MIN_VALUE/<span class="number">10</span>||(ans*flag==Integer.MIN_VALUE/<span class="number">10</span>&amp;&amp;c-<span class="string">'0'</span>&gt;<span class="number">8</span>))</span><br><span class="line">                        <span class="keyword">return</span> Integer.MIN_VALUE;</span><br><span class="line">                &#125;</span><br><span class="line">                ans=ans*<span class="number">10</span>+c-<span class="string">'0'</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span> ((c==<span class="string">'-'</span>||c==<span class="string">'+'</span>)&amp;&amp;i&lt;<span class="number">1</span>)&#123;<span class="comment">//第一个字符c不是数字，但c可以是正负号</span></span><br><span class="line"><span class="comment">//             空方法体，什么也不操作，进入第二次循环</span></span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;<span class="comment">//既不是数字，也不是第一个正负号字符，直接结束循环</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans*flag;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>时间复杂度：O(n*logn)    区间数组只需要遍历一次，主要是排序的时间复杂度。</p>
+<p>最坏情况每个字符访问一次，所以时间复杂度是：O(n)</p>
+<p><font color=red><strong>思路二：正则表达式法</strong></font> 这道题在leetcode上解答很少，因为题比较简单，大神都不屑于留恋。。</p>
+<p>最简单的方法直接用正则，贴一个别人的python解法，一行代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">myAtoi</span><span class="params">(self, s: str)</span> -&gt; int:</span></span><br><span class="line">        <span class="keyword">return</span> max(min(int(*re.findall(<span class="string">'^[\+\-]?\d+'</span>, s.lstrip())), <span class="number">2</span>**<span class="number">31</span> - <span class="number">1</span>), <span class="number">-2</span>**<span class="number">31</span>)</span><br></pre></td></tr></table></figure>
+
 <hr>
 <p>本人菜鸟，有错误请告知，感激不尽！</p>
 <p>更多题解和学习记录博客:<a href="https://blog.csdn.net/qq_42758551" target="_blank" rel="noopener">博客</a>、<a href="https://github.com/Jerrymouse1998/learning-record-of-leetcode" target="_blank" rel="noopener">github</a> </p>
@@ -307,7 +311,7 @@
           
           <div class="post-tags">
               <a href="/tags/leetcode/" rel="tag"><i class="fa fa-tag"></i> leetcode</a>
-              <a href="/tags/%E6%95%B0%E7%BB%84/" rel="tag"><i class="fa fa-tag"></i> 数组</a>
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="tag"><i class="fa fa-tag"></i> 字符串</a>
           </div>
 
         
@@ -316,12 +320,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/" rel="prev" title="LeetCode——合并两个有序数组">
-      <i class="fa fa-chevron-left"></i> LeetCode——合并两个有序数组
+    <a href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF/" rel="prev" title="LeetCode——岛屿的最大面积">
+      <i class="fa fa-chevron-left"></i> LeetCode——岛屿的最大面积
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/" rel="next" title="LeetCode——合并两个有序链表">
-      LeetCode——合并两个有序链表 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/14/%5BLeetCode%5D%E2%80%94%E2%80%94%E5%B0%86%E6%95%B0%E7%BB%84%E5%88%86%E6%88%90%E5%92%8C%E7%9B%B8%E7%AD%89%E7%9A%84%E4%B8%89%E4%B8%AA%E9%83%A8%E5%88%86/" rel="next" title="LeetCode——将数组分成和相等的三个部分">
+      LeetCode——将数组分成和相等的三个部分 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -383,7 +387,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#NO-56-合并区间-中等"><span class="nav-number">1.</span> <span class="nav-text">NO.56 合并区间 中等 </span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#NO-8-字符串转换整数-atoi-中等"><span class="nav-number">1.</span> <span class="nav-text">NO.8 字符串转换整数 (atoi) 中等 </span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
